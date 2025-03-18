@@ -1,0 +1,186 @@
+
+/* Header */
+*,::before,::after{
+    box-sizing: border-box;
+
+}
+
+.header-list li {
+    position: relative;
+    transition: 0.25s;
+}
+.header-list li:hover .link {
+    color :#f5086e;
+}
+
+.link{
+    display: inline-flex;
+    column-gap: 7px; 
+    align-items: center;
+}
+
+.sub-header-link{
+    display: inline-block;
+    transition: 0.25s;
+    position: relative;
+}
+
+ .sub-header-link:hover{
+    color:#f5086e;
+}
+.header-list li a {
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 98px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}.header-list li:hover .sub-header-item{
+    visibility: visible;
+    opacity: 1;
+    color:#000;
+   
+}
+.sub-header-item {
+    bottom:-202%;
+    transition:0.25s ease;
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.3);
+}
+.price-column{
+    column-gap: 7px;
+}
+.price-bought{
+    color:#f5086e;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.cart{
+    color:#f5086e;
+}
+.cart-icon{
+    color:#f5086e;
+}
+
+.price-column::before{
+    content:"0";
+    position: absolute;
+    top: -8px;
+    right: -14px;
+    color:#f5086e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fcfafa;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.menu:checked ~ .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.overlay{
+    inset:0;
+    z-index: 2;
+    background-color: rgba(0, 0 , 0, 0.3);
+    transition: 0.25s;
+}
+.menu:checked ~.menu-drawer{
+   transform: translateX(0%);
+}
+.menu-drawer{
+    inset :0 0 0 65%;
+    transform: translateX(100%);
+    background-color: #fff;
+    z-index: 3;
+    transition: 0.5s;
+}
+/* BTN  */
+
+.shopping-row{
+    padding:15px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.action{
+    width: 95%;
+    border: 3px solid #5c5c5c;
+}
+
+
+/* Body */
+/* SLider 1 */
+
+.action-content1{
+    border: 3px solid #5c5c5c;
+}
+
+
+/* Slider 2 */
+
+.visit-store1 {
+    border:3px solid #5c5c5c ;
+}
+
+/* Slider 3 */
+
+/* Slider 4 */
+.action-content4 {
+    border: 3px solid #fff;
+}
+
+/* Slider 5 */
+
+.overview{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+ }
+
+.shirt__img:hover  + .overview{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Slider 6 */
+
+.preview__overlay{
+    content: "";  
+    background:rgba(0, 0 , 0, 0.8);
+    
+}
+
+/* Slider 7 */
+
+.action-content7 {
+    border: 3px solid #5c5c5c;
+}
+
+/* Slider 8 */
+
+/* Footer */
+
+.social-footer a:hover svg  {    
+    background-color: #f2295b;  
+    color :#fff;
+}
+
+.social-footer a:hover {
+    background-color: #f2295b;  
+}
+
+.menu-footer a:hover {
+    color: #f2295b;
+}
+
+.customize:hover{
+    background-color: blue;
+}
+
+
+.modal {
+    background: rgba(0, 0 , 0, 0.3);
+}
+  
+
+        
