@@ -11,7 +11,7 @@ const Navigation = () => {
       <div className="column logo-column w-[470px]">
         <div className="img-custom-logo w-[200px] p-5 ">
           <img
-            src="./src/assets/picture/site-logo-free-img-1.png"
+            src={siteLogo}
             alt="Site Logo"
           />
         </div>

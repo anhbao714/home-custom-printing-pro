@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import { products } from "../data/products";
-import { banner1, banner2, content1, hdx } from "../assets";
+import { aboutHeader, banner1, banner2, content1, hdx, mug3 } from "../assets";
 export default function Body() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -118,7 +118,7 @@ export default function Body() {
             <div className="column1 w-full lg:w-1/4 md:w-1/2 md:h-[300px] relative flex h-[400px] lg:h-full ">
               <img
                 className="h-full w-full brightness-50 opacity-40 "
-                src="src/assets/picture/mug1.jpg"
+                src={mug1}
                 alt="Mug1"
               />
               <div className="visit absolute w-[300px] h-[170px] py-[20px] px-[30px]  lg:h-[300px] lg:w-full lg:p-5 text-xl text-[#415161] lg::flex lg:flex-col lg:justify-between">
@@ -148,7 +148,7 @@ export default function Body() {
             <div className="column2 md:w-1/2 md:h-[300px] lg:w-1/4 w-full  lg:h-full h-[270px]">
               <img
                 className="w-full h-full lg:h-full lg:w-full lg:object-scale-down object-cover [object-position:top] "
-                src="src/assets/picture/about-img.jpg"
+                src={aboutImg}
                 alt="About-img"
               />
             </div>
@@ -156,7 +156,7 @@ export default function Body() {
             <div className="column3 md:w-1/2 md:h-[300px] lg:w-1/4 w-full lg:h-full h-[270px]">
               <img
                 className="w-full h-full lg:h-full lg:w-ful object-cover [object-position:center]"
-                src="src/assets/picture/mug2.jpg"
+                src={mug2}
                 alt="Mug2"
               />
             </div>
@@ -182,7 +182,7 @@ export default function Body() {
           <div className="column img3-column w-full h-[270px] pt-[50px] lg:w-1/2 md:h-full lg:ml-20">
             <img
                className="h-full w-[400px] px-[7px] "
-               src="src/assets/picture/slider3.png"
+               src={slider3}
                alt="Slider3"
              />
            </div>
@@ -288,7 +288,7 @@ export default function Body() {
         <div className="preview relative">
           <img
             className="preview__img z-0 h-[200px] md:h-[500px] w-full object-cover relative"
-            src="src/assets/picture/banner-2.jpg"
+            src={banner2}
             alt="image"
           />
           <div className="preview__overlay z-1 left-0 bottom-0 absolute w-full h-[200px] md:h-full">
@@ -341,7 +341,7 @@ export default function Body() {
         <div className="column img7-column md:w-6/12 lg:h-full md:h-[400px] h-[414.4px] w-full">
           <img
             className="h-full w-full"
-            src="src/assets/picture/mug3.jpg"
+            src={mug3}
             alt="Mug3"
           />
         </div>
@@ -351,7 +351,7 @@ export default function Body() {
         <div className="column img8-column w-full h-[250px] lg:w-6/12 lg:h-[550px] relative">
           <img
             className="h-full w-full object-cover"
-            src="src/assets/picture/about-header.jpg"
+            src={aboutHeader}
             alt="img8"
           />
           <div className="buy-products absolute inset-0 flex flex-col w-full h-[250px] lg:h-[550px] bg-gray-900 bg-opacity-50 text-white lg:p-[100px]">
@@ -383,7 +383,7 @@ export default function Body() {
         <div className="column mug8-column w-full h-[250px] lg:w-6/12 lg:h-[550px] relative">
           <img
             className="h-full w-full object-cover [object-position:top] lg:object-none"
-            src="src/assets/picture/mug4.jpg"
+            src={mug4}
             alt="mug4"
           />
           <div className="buy-mugs absolute inset-0 flex flex-col w-full h-[250px] lg:h-[550px] bg-white bg-opacity-50 text-[#415161]  lg:p-[100px]">
