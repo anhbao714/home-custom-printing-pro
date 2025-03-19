@@ -1,5 +1,6 @@
 import { useState } from "react"; 
 import { products } from "../data/products";
+import { banner1, banner2, content1, hdx } from "../assets";
 export default function Body() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -46,7 +47,7 @@ export default function Body() {
         </div>
         <div className="column picture-column flex justify-center items-center w-full h-[380px] md:6/12 md:h-full">
           <img className="w-full h-full md:w-[600px]"
-            src="./src/assets/picture/content-1.png"
+            src={content1}
             alt="Picture-content1"
           />
         </div>
@@ -59,7 +60,7 @@ export default function Body() {
             <div className="column1 lg:w-1/4 md:w-1/2 relative flex items-center justify-center md:h-[300px] h-[200px] lg:h-full">
               <img
                 className="md:h-full w-full h-[200px] opacity-25 object-contain"
-                src="./src/assets/picture/hdx.jpg"
+                src={hdx}
                 alt="HDX"
               />
               <div className="texttt w-full md:h-full h-[200px] absolute z-1">
@@ -73,7 +74,7 @@ export default function Body() {
             <div className="column2 lg:w-1/4 md:w-1/2 md:h-[300px] h-[270px] w-full lg:h-full">
               <img
                 className="h-full w-full opacity-100 object-cover"
-                src="src/assets/picture/banner-2.jpg"
+                src={banner2}
                 alt="Banner2"
               />
             </div>
@@ -81,7 +82,7 @@ export default function Body() {
             <div className="column3 lg:w-1/2 relative flex w-full md:h-[300px] h-[330px] lg:h-full">
               <img
                 className="h-full w-full"
-                src="src/assets/picture/banner-1.jpg"
+                src={banner1}
                 alt="Banner1"
               />
 
