@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
 @layer utilities {
   .animate-fade-in {
     animation: fadeInModal 0.3s ease-out forwards;
