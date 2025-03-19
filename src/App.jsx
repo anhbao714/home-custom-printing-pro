@@ -11,7 +11,7 @@ import Mugs from "./pages/Mugs/mugs";
 import AboutHDX from "./pages/AboutHDX/aboutHDX";
 import Contact from "./pages/Contact/contact";
 import Login from "./pages/Account/MyAccount/Login/Login";
-import LostPassword from "./pages/Account/MyAccount/LostPassword/Lostpassword";
+import LostPassword from "./pages/Account/MyAccount/LostPassword/LostPassword";
 import Cart from "./pages/Account/Cart/cart";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterURL } from "./enmus/enums.router";
