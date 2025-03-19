@@ -1,14 +1,4 @@
-import { tshirt1 } from "../assets";
-import { tshirt2 } from "../assets";
-import { tshirt3 } from "../assets";
-import { tshirt4 } from "../assets";
-import { tshirt5 } from "../assets";
-import { tshirt6 } from "../assets";
-import { mug1 } from "../assets";
-import { mug2 } from "../assets";
-import { mug3 } from "../assets";
-import { mug4 } from "../assets";
-import { mug5 } from "../assets";
+
 export const products = [
     
         {
