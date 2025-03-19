@@ -11,7 +11,7 @@ import Mugs from "./pages/Mugs/mugs";
 import AboutHDX from "./pages/AboutHDX/aboutHDX";
 import Contact from "./pages/Contact/contact";
 import Login from "./pages/Account/MyAccount/Login/Login";
-// import LostPassword from "./pages/Account/MyAccount/LostPassword/LostPassword";
+import LostPassword from "./pages/Account/MyAccount/LostPassword/LostPassword";
 import Cart from "./pages/Account/Cart/cart";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterURL } from "./enmus/enums.router";
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter  basename='/home-custom-printing-pro/'>
         <Routes>
           <Route path={RouterURL.Home} element={<Home />} />
           <Route path={RouterURL.Contact} element={<Contact />} />
@@ -28,7 +28,7 @@ function App() {
           <Route path={RouterURL.Tshirts} element={<Tshirts />} />     
           <Route path={RouterURL.Allproducts} element={<Allproducts />} />
           <Route path={RouterURL.Login} element={<Login />} />
-          {/* <Route path={RouterURL.LostPassword} element={<LostPassword />} /> */}
+          <Route path={RouterURL.LostPassword} element={<LostPassword />} />
           <Route path={RouterURL.AboutHDX} element={<AboutHDX />} />
           <Route path={RouterURL.Cart} element={<Cart />} />
         </Routes>
