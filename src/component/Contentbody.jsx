@@ -13,7 +13,7 @@ export default function Body() {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1)); 
   };
   return (
-    <div className="Container-content ">
+    <div className="Container-content  ">
       <div className="slider1 w-full mt-5 md:mt-0">
       <div className="flex flex-col md:flex-row lg:m-9 md:h-[572px] h-[580px]">
           <div className="column content1-column w-full h-[200px] md:w-6/12 md:p-[50px] md:h-full ">

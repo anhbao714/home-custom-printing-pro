@@ -6,7 +6,7 @@ const Navigation = () => {
   const [accountOpen, setAccountOpen] = useState(false);
 
   return (
-    <div className="container-header w-full h-[100px] flex relative items-center justify-between font-barlow px-4 lg:px-8 ">
+    <div className="container-header w-full h-[100px] flex relative items-center justify-between font-barlow-important px-4 lg:px-8 ">
       {/* Cột Logo */}
       <div className="column logo-column w-[470px]">
         <div className="img-custom-logo w-[200px] p-5 ">
