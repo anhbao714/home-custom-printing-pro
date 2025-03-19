@@ -15,7 +15,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/home-custom-printing-pro/">
         <Routes>
           <Route path={RouterURL.Home} element={<Home />} />
           <Route path={RouterURL.Contact} element={<Contact />} />
@@ -31,5 +31,6 @@ function App() {
     </QueryClientProvider>
   );
 }
+
 
 export default App;
