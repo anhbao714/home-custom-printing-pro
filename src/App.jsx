@@ -25,7 +25,7 @@ function App() {
           <Route path={RouterURL.Home} element={<Home />} />
           <Route path={RouterURL.Contact} element={<Contact />} />
           <Route path={RouterURL.Mugs} element={<Mugs />} />
-          <Route path={RouterURL.Tshirts} element={<Tshirts />} />
+          <Route path={RouterURL.Tshirts} element={<Tshirts />} />     
           <Route path={RouterURL.Allproducts} element={<Allproducts />} />
           <Route path={RouterURL.Login} element={<Login />} />
           <Route path={RouterURL.LostPassword} element={<LostPassword />} />
