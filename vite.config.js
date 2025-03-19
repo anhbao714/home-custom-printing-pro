@@ -6,4 +6,14 @@ export default defineConfig({
   // base: '/home-custom-printing-pro/', // 👈 Thêm dòng này
   base: '/', // 👈 Thêm dòng này
   plugins: [react()],
+  server: {
+    historyApiFallback: true,
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
