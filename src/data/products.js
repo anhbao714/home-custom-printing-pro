@@ -1,4 +1,4 @@
-
+import { tshirt1 } from "../assets";
 export const products = [
     
         {
@@ -112,5 +112,4 @@ export const products = [
           },
   ];
 
-  
   
