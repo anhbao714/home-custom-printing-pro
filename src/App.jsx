@@ -28,7 +28,7 @@ function App() {
           <Route path={RouterURL.Tshirts} element={<Tshirts />} />     
           <Route path={RouterURL.Allproducts} element={<Allproducts />} />
           <Route path={RouterURL.Login} element={<Login />} />
-          {/* <Route path={RouterURL.LostPassword} element={<LostPassword />} /> */}
+          {/* <Route path={RouterURL.LostPassword} element={<LostPassword />} />git */}
           <Route path={RouterURL.AboutHDX} element={<AboutHDX />} />
           <Route path={RouterURL.Cart} element={<Cart />} />
         </Routes>
