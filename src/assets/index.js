@@ -6,7 +6,7 @@ import banner2 from "./picture/banner-2.jpg";
 import content1 from "./picture/content-1.png";
 import hdx from "./picture/hdx.jpg";
 import siteLogo from './assets/site-logo.png';
-import mug1 from './assets/mug1.jpg';
+import mug1 from './assets/mug1.jpg'
 import mug2 from "./picture/mug2.jpg";
 import mug3 from "./picture/mug3.jpg";
 import mug4 from "./picture/mug4.jpg";
