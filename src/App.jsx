@@ -5,13 +5,13 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Home from "./pages/Home/home";
-import Allproducts from "./pages/AllProducts/allproducts";
+import Allproducts from "./pages/AllProducts/allproducts"; 
 import Tshirts from "./pages/Tshirts/tshirts";
 import Mugs from "./pages/Mugs/mugs";
 import AboutHDX from "./pages/AboutHDX/aboutHDX";
 import Contact from "./pages/Contact/contact";
-import Login from "./pages/Account/MyAccount/Login/Login";
-import LostPassword from "./pages/Account/MyAccount/Lostpassword/Lostpassword";
+import Login from "./pages/Account/MyAccount/Login/login";
+import LostPassword from "./pages/Account/MyAccount/Lostpassword/lostpassword";
 import Cart from "./pages/Account/Cart/cart";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterURL } from "./enmus/enums.router";
