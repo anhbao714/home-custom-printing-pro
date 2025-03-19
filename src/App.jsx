@@ -20,7 +20,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter  basename='/home-custom-printing-pro/'>
+      <BrowserRouter>
         <Routes>
           <Route path={RouterURL.Home} element={<Home />} />
           <Route path={RouterURL.Contact} element={<Contact />} />
