@@ -1,5 +1,9 @@
 import "./App.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
 import Home from "./pages/Home/home";
 import Allproducts from "./pages/AllProducts/allproducts";
 import Tshirts from "./pages/Tshirts/tshirts";
@@ -13,6 +17,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterURL } from "./enmus/enums.router";
 const queryClient = new QueryClient();
 function App() {
+
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter basename="/home-custom-printing-pro/">
@@ -31,6 +36,5 @@ function App() {
     </QueryClientProvider>
   );
 }
-
 
 export default App;
