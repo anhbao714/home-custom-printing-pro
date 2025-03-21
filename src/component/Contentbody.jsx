@@ -1,6 +1,20 @@
 import { useState } from "react"; 
 import { products } from "../data/products";
-import { aboutHeader, banner1, banner2, content1, hdx, mug3 } from "../assets";
+import {
+  aboutHeader,
+  banner1,
+  banner2,
+  content1,
+  slider3,
+  hdx,
+  mug3,
+  mug1,
+  mug2,
+  mug4,
+  plusIcon,
+  aboutImg,
+} from "../assets";
+
 export default function Body() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
