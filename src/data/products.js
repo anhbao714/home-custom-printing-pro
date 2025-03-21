@@ -1,3 +1,15 @@
+import tshirt1 from "../assets/picture/tshirt1.jpg"
+import tshirt2 from "../assets/picture/tshirt2.jpg"
+import tshirt3 from "../assets/picture/tshirt3.jpg"
+import tshirt4 from "../assets/picture/tshirt4.jpg"
+import tshirt5 from "../assets/picture/tshirt5.jpg"
+import tshirt6 from "../assets/picture/tshirt6.jpg"
+import mug1 from "../assets/picture/mug1.jpg"
+import mug2 from "../assets/picture/mug2 jpg"
+import mug3 from "../assets/picture/mug3.jpg"
+import mug4 from "../assets/picture/mug4.jpg"
+import mug5 from "../assets/picture/mug5.jpg"
+
 
 export const products = [
     
