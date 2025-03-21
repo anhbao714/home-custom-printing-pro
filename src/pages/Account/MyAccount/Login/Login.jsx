@@ -1,7 +1,9 @@
 import Navigation from "../../../../component/Navigation";
 import Footer from "../../../../component/Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
       <Navigation></Navigation>
@@ -28,13 +30,16 @@ const Login = () => {
                         />
                         <div className="relative w-full my-[30px]">
                           <input
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             placeholder="Password"
                             required
                             className="peer w-full h-[52.2px] border px-[13.6px] py-[15.3px] pr-10"
                           />
-                          <span className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer peer-focus:text-black text-gray-400">
-                            👁
+                          <span
+                            onClick={() => setShowPassword(!showPassword)}
+                            className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer peer-focus:text-black text-gray-400"
+                          >
+                            {showPassword ? "👁" : "👁"}
                           </span>
                         </div>
 
