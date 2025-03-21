@@ -248,7 +248,7 @@ export default function Body() {
           <div className="Mugs hidden md:block p-6">Mugs</div>
         </div>
 
-        <div className="row product w-full h-[2270px] md:h-[1135px] lg:h-[500px] flex p-5">
+        <div className="row product w-full h-[2300px] md:h-[1135px] lg:h-[500px] flex p-5">
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4">
             {products.slice(0, 4).map((product) => (
               <div
