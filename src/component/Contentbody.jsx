@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import { products } from "../data/products";
 import {
   aboutHeader,
@@ -22,49 +22,48 @@ export default function Body() {
   const increaseQuantity = () => {
     setQuantity((prev) => prev + 1);
   };
-  
+
   const decreaseQuantity = () => {
-    setQuantity((prev) => (prev > 1 ? prev - 1 : 1)); 
+    setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   };
   return (
     <div className="Container-content  ">
       <div className="slider1 w-full mt-5 md:mt-0">
-      <div className="flex flex-col md:flex-row lg:m-9 md:h-[572px] h-[580px]">
+        <div className="flex flex-col md:flex-row lg:m-9 md:h-[572px] h-[580px]">
           <div className="column content1-column w-full h-[200px] md:w-6/12 md:p-[50px] md:h-full ">
-          <div className="content-header text-[30px] md:text-[46px] lg:text-[70px] font-semibold md:font-bold text-slate-600 text-center md:text-left">
-            Customized Printed Tees
-          </div>
+            <div className="content-header text-[30px] md:text-[46px] lg:text-[70px] font-semibold md:font-bold text-slate-600 text-center md:text-left">
+              Customized Printed Tees
+            </div>
 
+            <div className="content-sub-header text-sm text-center md:text-left text-slate-600 mb-5 md:mb-14 md:text-base">
+              Nam at congue diam etiam erat lectus, finibus eget commodo quis,
+              congue diam etiam erat lectus.
+            </div>
 
-          <div className="content-sub-header text-sm text-center md:text-left text-slate-600 mb-5 md:mb-14 md:text-base">
-            Nam at congue diam etiam erat lectus, finibus eget commodo quis,  
-            congue diam etiam erat lectus.
+            <div className="explore flex items-center justify-center md:flex md:justify-start md:items-center ">
+              <a
+                href=""
+                className="action-content1 text-xs uppercase p-2.5 w-[200px] flex items-center justify-center space-x-2 border-[3px] border-[white] "
+              >
+                <svg
+                  className="right-icon text-[10px] h-4 w-4 mr-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                >
+                  <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                </svg>
+                Explore Store
+              </a>
+            </div>
           </div>
-
-          <div className="explore flex items-center justify-center md:flex md:justify-start md:items-center ">
-            <a
-            href=""
-            className="action-content1 text-xs uppercase p-2.5 w-[200px] flex items-center justify-center space-x-2 border-[3px] border-[white] "
-          >
-            <svg
-              className="right-icon text-[10px] h-4 w-4 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-            >
-              <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
-            </svg>
-            Explore Store
-          </a>
+          <div className="column picture-column flex justify-center items-center w-full h-[380px] md:6/12 md:h-full">
+            <img
+              className="w-full h-full md:w-[600px]"
+              src={content1}
+              alt="Picture-content1"
+            />
           </div>
-          
-        </div>
-        <div className="column picture-column flex justify-center items-center w-full h-[380px] md:6/12 md:h-full">
-          <img className="w-full h-full md:w-[600px]"
-            src={content1}
-            alt="Picture-content1"
-          />
-        </div>
         </div>
       </div>
 
@@ -94,35 +93,30 @@ export default function Body() {
             </div>
 
             <div className="column3 lg:w-1/2 relative flex w-full md:h-[300px] h-[330px] lg:h-full">
-              <img
-                className="h-full w-full"
-                src={banner1}
-                alt="Banner1"
-              />
+              <img className="h-full w-full" src={banner1} alt="Banner1" />
 
               <div className="arrive-store absolute w-full md:h-full h-[330px] flex">
                 <div className="column-arrive1 w-1/2 h-full"></div>
                 <div className="column-arrive2 w-1/2 h-full lg:py-10 lg:pr-10 py-[100px]">
                   <p className="lg:text-[33px] text-[25px] text-[#808285] font-bold mb-[15px]">
-                  Get Printed T-shirt @ $25!
+                    Get Printed T-shirt @ $25!
                   </p>
                   <div className="w-2/3 md:w-3/5 h-[35px]">
                     <a
-                    href=""
-                    className="visit-store1 w-full text-xs text-[#6d6767] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#757070]"
-                  >
-                    <svg
-                      className="right-icon h-4 w-4 mr-3"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      fill="currentColor"
+                      href=""
+                      className="visit-store1 w-full text-xs text-[#6d6767] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#757070]"
                     >
-                      <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
-                    </svg>
-                    Visit Store
-                  </a>
+                      <svg
+                        className="right-icon h-4 w-4 mr-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        fill="currentColor"
+                      >
+                        <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                      </svg>
+                      Visit Store
+                    </a>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -140,7 +134,7 @@ export default function Body() {
                   Get Printed Mug @ $15!
                 </p>
                 <div className="w-[280px] h-[30px] lg:w-full lg:h-[40px]">
-                <a
+                  <a
                     href=""
                     className="visit-store2 w-[130px] lg:w-full text-xs  text-[#415161] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#415161]"
                   >
@@ -155,7 +149,6 @@ export default function Body() {
                     Visit Store
                   </a>
                 </div>
-                
               </div>
             </div>
 
@@ -195,25 +188,25 @@ export default function Body() {
         <div className="body-slider3 flex flex-col md:flex-row w-full h-[500px] md:h-[400px] bg-white">
           <div className="column img3-column w-full h-[270px] pt-[50px] lg:w-1/2 md:h-full lg:ml-20">
             <img
-               className="h-full w-[400px] px-[7px] "
-               src={slider3}
-               alt="Slider3"
-             />
-           </div>
+              className="h-full w-[400px] px-[7px] "
+              src={slider3}
+              alt="Slider3"
+            />
+          </div>
 
-           <div className="column content3-column w-full h-[230px] md:w-1/2 md:h-full flex flex-col justify-center md:px-6 md:mr-20">
-             <div className="color-month text-center md:text-left">
-               <div className="header-slider3 uppercase text-2xl font-bold text-gray-600">
-                 #ColorOfTheMonth
-               </div>
-               <div className="sub-slider3 text-gray-600 py-10 text-sm flex justify-between items-center">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-               </div>
-               <div className="footer-slider3 uppercase text-xl font-bold text-gray-600">
-                 Just $35!!!
-               </div>
-             </div>
+          <div className="column content3-column w-full h-[230px] md:w-1/2 md:h-full flex flex-col justify-center md:px-6 md:mr-20">
+            <div className="color-month text-center md:text-left">
+              <div className="header-slider3 uppercase text-2xl font-bold text-gray-600">
+                #ColorOfTheMonth
+              </div>
+              <div className="sub-slider3 text-gray-600 py-10 text-sm flex justify-between items-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </div>
+              <div className="footer-slider3 uppercase text-xl font-bold text-gray-600">
+                Just $35!!!
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -245,7 +238,9 @@ export default function Body() {
 
       <div className="slider5 w-full  lg:h-[1000px] py-[100px]">
         <div className="row w-full h-[100px] flex items-center justify-center font-black text-neutral-700 mb-[100px]">
-          <p className=" slider5-header md:text-[42px] text-[25px] ">Featured Products</p>
+          <p className=" slider5-header md:text-[42px] text-[25px] ">
+            Featured Products
+          </p>
         </div>
 
         <div className="row list-gift text-base  w-full h-[60px] flex items-center font-bold text-zinc-600">
@@ -254,47 +249,71 @@ export default function Body() {
         </div>
 
         <div className="row product w-full h-[2270px] md:h-[1135px] lg:h-[500px] flex p-5">
-            <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4">
-                  {products.slice(0, 4).map((product) => (
-                    <div key={product.id} className="column product1-column w-full h-full px-2">
-                      <div className="row img-product relative">
-                        <img className="shirt__img cursor-pointer" src={product.image} alt={product.name} />
-                        <div onClick={() => {
-                          setSelectedProduct(product)
-                          setIsOpen(true);}}  className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0">
-                           <button className="quickview text-white block text-center js-quick-view">
-                              Quick view
-                            </button>
-                        </div>
-                        {product.sale && ( 
-                          <div className="absolute top-[-10px] right-[-10px] w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
-                            <span className="text-sm font-bold">sale!</span>
-                          </div>
-                        )}
-                      </div>
-                      <div className="row info-product text-center hover:shadow-lg transition-shadow duration-300">
-                        <div className="name-product py-4 text-gray-600">{product.category}</div>
-                        <div className="color-product my-4 font-bold text-gray-800">{product.name}</div>
-                        <div className="review-rating flex items-center justify-center mb-4 space-x-1">
-                          {[...Array(5)].map((_, index) => (
-                             <svg
-                             key={index}
-                             className="icon-star h-5 w-5"
-                             xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 576 512"
-                           >
-                             <path fill="#FFFFFF" stroke="#808080" strokeWidth="35" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0z"/>
-                           </svg>
-                          ))}
-                        </div>
-                        <div className="price flex items-center justify-center mb-5 font-semibold">
-                          <div className="original-price line-through text-gray-400">{product.originalPrice}</div>
-                          <div className="sale-price text-zinc-700">{product.salePrice}</div>
-                        </div>
-                      </div>
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4">
+            {products.slice(0, 4).map((product) => (
+              <div
+                key={product.id}
+                className="column product1-column w-full h-full px-2"
+              >
+                <div className="row img-product relative">
+                  <img
+                    className="shirt__img w-full h-full cursor-pointer"
+                    src={product.image}
+                    alt={product.name}
+                  />
+                  <div
+                    onClick={() => {
+                      setSelectedProduct(product);
+                      setIsOpen(true);
+                    }}
+                    className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0"
+                  >
+                    <button className="quickview text-white block text-center js-quick-view">
+                      Quick view
+                    </button>
+                  </div>
+                  {product.sale && (
+                    <div className="absolute top-[-10px] right-[-10px] w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
+                      <span className="text-sm font-bold">sale!</span>
                     </div>
-                  ))}
-           </div>
+                  )}
+                </div>
+                <div className="row info-product text-center hover:shadow-lg transition-shadow duration-300">
+                  <div className="name-product py-4 text-gray-600">
+                    {product.category}
+                  </div>
+                  <div className="color-product my-4 font-bold text-gray-800">
+                    {product.name}
+                  </div>
+                  <div className="review-rating flex items-center justify-center mb-4 space-x-1">
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="icon-star h-5 w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="#FFFFFF"
+                          stroke="#808080"
+                          strokeWidth="35"
+                          d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0z"
+                        />
+                      </svg>
+                    ))}
+                  </div>
+                  <div className="price flex items-center justify-center mb-5 font-semibold">
+                    <div className="original-price line-through text-gray-400">
+                      {product.originalPrice}
+                    </div>
+                    <div className="sale-price text-zinc-700">
+                      {product.salePrice}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -351,13 +370,8 @@ export default function Body() {
           </a>
         </div>
 
-
         <div className="column img7-column md:w-6/12 lg:h-full md:h-[400px] h-[414.4px] w-full">
-          <img
-            className="h-full w-full"
-            src={mug3}
-            alt="Mug3"
-          />
+          <img className="h-full w-full" src={mug3} alt="Mug3" />
         </div>
       </div>
 
@@ -427,112 +441,149 @@ export default function Body() {
       </div>
 
       <div className="Modal">
-  {isOpen && selectedProduct && (
-    <div className="modal z-[100] overflow-y-auto overflow-x-hidden fixed right-0 left-0 bottom-0 top-0 w-full h-full flex items-center justify-center p-10 md:p-[80px] lg:p-0 lg:flex-row scroll animate-fade-in">
-      <div className="modal-container lg:h-[500px] lg:w-[1000px] md:w-full md:h-[330px] bg-white flex relative right-0 left-0 bottom-10 top-20 md:bottom-0 md:top-0 flex-col md:flex-row">
-        <div className="column modal-img w-full h-auto z-70 md:w-1/2 md:h-[330px] lg:h-[500px] relative">
-          <img
-            className="h-auto md:h-[330px] lg:h-full w-full z-100"
-            src={selectedProduct.image}
-            alt={selectedProduct.name}
-          />
-          <div className="absolute top-[10px] left-[10px] w-[40px] h-[40px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
-            <span className="text-sm font-bold">sale!</span>
-          </div>
-        </div>
-        <div className="column info-column w-full h-full md:w-1/2 md:overflow-y-auto lg:h-[500px] lg:overflow-visible md:max-h-[330px]">
-          <div className="row modal-content h-[full-80px] w-full p-[15px] pb-0 lg:px-[30px] lg:pt-[30px]">
-            <div className="row modal-content1 h-1/2 w-full border-b-2">
-              <div className="modal-name text-[27px] text-[#415161] font-black">
-                {selectedProduct.name}
-              </div>
-              <div className="modal-price flex text-2xl font-semibold mb-2">
-                {selectedProduct.sale ? (
-                  <>
-                    <div className="modal-original-price line-through text-[#c7c7c7] mr-2">
-                      {selectedProduct.originalPrice}
-                    </div>
-                    <div className="modal-sale-price text-[#67727d]">
-                      {selectedProduct.salePrice}
-                    </div>
-                  </>
-                ) : (
-                  <div className="modal-sale-price text-[#67727d]">
-                    {selectedProduct.originalPrice}
-                  </div>
-                )}
-              </div>
-              <div className="modal-body text-base flex justify-start text-[#67727d] mb-[17px]">
-                Neque porro quisquam est, qui dolore ipsum quia dolor sit amet,
-                consectetur adipisci velit, sed quia non incidunt lores ta porro
-                ame. numquam eius modi tempora incidunt lores ta porro ame.
-              </div>
-            </div>
-
-            <div className="row modal-content2 h-1/2 w-full">
-              <div className="modal-category mb-[15px] pt-[10px] text-base">
-                <span className="posted_in text-[#67727d]">
-                  Category:
-                  <a className="text-pink-700" href={`/${selectedProduct.category.toLowerCase()}`}>
-                    {" "} {selectedProduct.category}
-                  </a>
-                </span>
-              </div>
-              <div className="modal-fs text-lg text-[#67727d] my-[10px] font-bold">
-                Free shipping on orders over $50!
-              </div>
-
-              {/* Dùng map ở đây */}
-              {["No-Risk Money Back Guarantee!", "No Hassle Refunds", "Secure Payments"].map((text, index) => (
-                <div key={index} className="modal-check flex justify-start items-center text-[#67727d] ">
-                  <svg className="h-[15px] w[15px] pr-1" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 512 512">
-                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                  </svg>
-                  <div className="modal-sub pl-[10px]">{text}</div>
+        {isOpen && selectedProduct && (
+          <div className="modal z-[100] overflow-y-auto overflow-x-hidden fixed right-0 left-0 bottom-0 top-0 w-full h-full flex items-center justify-center p-10 md:p-[80px] lg:p-0 lg:flex-row scroll animate-fade-in">
+            <div className="modal-container lg:h-[500px] lg:w-[1000px] md:w-full md:h-[330px] bg-white flex relative right-0 left-0 bottom-10 top-20 md:bottom-0 md:top-0 flex-col md:flex-row">
+              <div className="column modal-img w-full h-auto z-70 md:w-1/2 md:h-[330px] lg:h-[500px] relative">
+                <img
+                  className="h-auto md:h-[330px] lg:h-full w-full z-100"
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                />
+                <div className="absolute top-[10px] left-[10px] w-[40px] h-[40px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
+                  <span className="text-sm font-bold">sale!</span>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="row my-5">
-            <div className="modal-cart flex items-center justify-start ">
-              <div className="flex items-center justify-start ml-[8px] lg:my-5 lg:pl-[30px]">
-                <button onClick={decreaseQuantity} className="w-10 h-10 flex items-center justify-center bg-white text-[#67727d] text-xl font-bold border-2">
-                  -
-                </button>
-                <span id="counter" className="w-16 h-10 flex items-center justify-center bg-white text-[#67727d] text-lg font-semibold border-2">
-                {quantity}
-                </span>
-                <button onClick={increaseQuantity} className="w-10 h-10 flex items-center justify-center bg-white text-[#67727d] text-xl font-bold border-2">
-                  +
-                </button>
               </div>
-              <a href="" className="action-modal md:text-xs uppercase p-2.5 w-[174px] h-[40px] flex items-center justify-center mx-2 space-x-2 border-2 text-gray-800 ">
-                <svg className="right-icon h-4 w-4 mr-3 text-[#67727d]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
-                  <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+              <div className="column info-column w-full h-full md:w-1/2 md:overflow-y-auto lg:h-[500px] lg:overflow-visible md:max-h-[330px]">
+                <div className="row modal-content h-[full-80px] w-full p-[15px] pb-0 lg:px-[30px] lg:pt-[30px]">
+                  <div className="row modal-content1 h-1/2 w-full border-b-2">
+                    <div className="modal-name text-[27px] text-[#415161] font-black">
+                      {selectedProduct.name}
+                    </div>
+                    <div className="modal-price flex text-2xl font-semibold mb-2">
+                      {selectedProduct.sale ? (
+                        <>
+                          <div className="modal-original-price line-through text-[#c7c7c7] mr-2">
+                            {selectedProduct.originalPrice}
+                          </div>
+                          <div className="modal-sale-price text-[#67727d]">
+                            {selectedProduct.salePrice}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="modal-sale-price text-[#67727d]">
+                          {selectedProduct.originalPrice}
+                        </div>
+                      )}
+                    </div>
+                    <div className="modal-body text-base flex justify-start text-[#67727d] mb-[17px]">
+                      Neque porro quisquam est, qui dolore ipsum quia dolor sit
+                      amet, consectetur adipisci velit, sed quia non incidunt
+                      lores ta porro ame. numquam eius modi tempora incidunt
+                      lores ta porro ame.
+                    </div>
+                  </div>
+
+                  <div className="row modal-content2 h-1/2 w-full">
+                    <div className="modal-category mb-[15px] pt-[10px] text-base">
+                      <span className="posted_in text-[#67727d]">
+                        Category:
+                        <a
+                          className="text-pink-700"
+                          href={`/${selectedProduct.category.toLowerCase()}`}
+                        >
+                          {" "}
+                          {selectedProduct.category}
+                        </a>
+                      </span>
+                    </div>
+                    <div className="modal-fs text-lg text-[#67727d] my-[10px] font-bold">
+                      Free shipping on orders over $50!
+                    </div>
+
+                    {/* Dùng map ở đây */}
+                    {[
+                      "No-Risk Money Back Guarantee!",
+                      "No Hassle Refunds",
+                      "Secure Payments",
+                    ].map((text, index) => (
+                      <div
+                        key={index}
+                        className="modal-check flex justify-start items-center text-[#67727d] "
+                      >
+                        <svg
+                          className="h-[15px] w[15px] pr-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentcolor"
+                          viewBox="0 0 512 512"
+                        >
+                          <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                        </svg>
+                        <div className="modal-sub pl-[10px]">{text}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="row my-5">
+                  <div className="modal-cart flex items-center justify-start ">
+                    <div className="flex items-center justify-start ml-[8px] lg:my-5 lg:pl-[30px]">
+                      <button
+                        onClick={decreaseQuantity}
+                        className="w-10 h-10 flex items-center justify-center bg-white text-[#67727d] text-xl font-bold border-2"
+                      >
+                        -
+                      </button>
+                      <span
+                        id="counter"
+                        className="w-16 h-10 flex items-center justify-center bg-white text-[#67727d] text-lg font-semibold border-2"
+                      >
+                        {quantity}
+                      </span>
+                      <button
+                        onClick={increaseQuantity}
+                        className="w-10 h-10 flex items-center justify-center bg-white text-[#67727d] text-xl font-bold border-2"
+                      >
+                        +
+                      </button>
+                    </div>
+                    <a
+                      href=""
+                      className="action-modal md:text-xs uppercase p-2.5 w-[174px] h-[40px] flex items-center justify-center mx-2 space-x-2 border-2 text-gray-800 "
+                    >
+                      <svg
+                        className="right-icon h-4 w-4 mr-3 text-[#67727d]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        fill="currentColor"
+                      >
+                        <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                      </svg>
+                      Add To Cart
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+                className="modal-close absolute top-[-18px] right-[-18px] bg-gray-200 rounded-full cursor-pointer"
+              >
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentcolor"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
                 </svg>
-                Add To Cart
-              </a>
+              </button>
             </div>
           </div>
-        </div>
-
-        <button
-          onClick={() => {
-            setIsOpen(false);
-          }}
-          className="modal-close absolute top-[-18px] right-[-18px] bg-gray-200 rounded-full cursor-pointer"
-        >
-          <svg className="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 512 512">
-            <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
-          </svg>
-        </button>
+        )}
       </div>
-    </div>
-  )}
- </div>
-
     </div>
   );
 }
-
