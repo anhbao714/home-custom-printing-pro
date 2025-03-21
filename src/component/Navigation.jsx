@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { siteLogo } from "../assets/images";
+import { siteLogo } from "../assets/picture/site-logo-free-img-1.png";
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
