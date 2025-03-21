@@ -1,10 +1,9 @@
 import Navigation from "../../component/Navigation";
 import Footer from "../../component/Footer";
-import {
-    aboutHeader,
-    aboutSectionBg,
-    aboutImg,
-  } from "../assets";
+import aboutHeader from "../../assets/picture/aboutHeader.jpg";
+import aboutImg from "../../assets/picture/aboutImg.jpg";
+import aboutSectionBg from "../../assets/picture/aboutSectionBg.jpg";
+
 const AboutHDX = () => {
     return (
         <div>
