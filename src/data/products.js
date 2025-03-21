@@ -1,4 +1,4 @@
-import { tshirt1, tshirt2, tshirt3, tshirt4, tshirt5, tshirt6, mug1, mug2, mug3, mug4, mug5 } from "../assets/picture";
+import { tshirt1, tshirt2, tshirt3, tshirt4, tshirt5, tshirt6, mug1, mug2, mug3, mug4, mug5 } from "../assets/picture"; 
 
 
 export const products = [
