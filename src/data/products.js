@@ -1,4 +1,11 @@
-
+import {
+  tshirt1,
+  tshirt2,
+  tshirt3,
+  tshirt4,
+  tshirt5,
+  tshirt6,
+} from "../assets/picture"; 
 export const products = [
     
         {
