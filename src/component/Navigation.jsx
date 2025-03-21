@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { siteLogo } from "../assets/picture/site-logo-free-img-1.png";
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
@@ -11,7 +10,7 @@ const Navigation = () => {
       <div className="column logo-column w-[470px]">
         <div className="img-custom-logo w-[200px] p-5 ">
           <img
-            src={siteLogo}
+            src="src/assets/picture/site-logo-free-img-1.png"
             alt="Site Logo"
           />
         </div>
