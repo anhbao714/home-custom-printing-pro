@@ -47,7 +47,7 @@ export default function Body() {
         </div>
         <div className="column picture-column flex justify-center items-center w-full h-[380px] md:6/12 md:h-full">
           <img className="w-full h-full md:w-[600px]"
-            src="src/assets/picture/content-1.png"
+            src={content1}
             alt="Picture-content1"
           />
         </div>
@@ -60,7 +60,7 @@ export default function Body() {
             <div className="column1 lg:w-1/4 md:w-1/2 relative flex items-center justify-center md:h-[300px] h-[200px] lg:h-full">
               <img
                 className="md:h-full w-full h-[200px] opacity-25 object-contain"
-                src="src/assets/picture/hdx.jpg"
+                src={hdx}
                 alt="HDX"
               />
               <div className="texttt w-full md:h-full h-[200px] absolute z-1">
@@ -74,7 +74,7 @@ export default function Body() {
             <div className="column2 lg:w-1/4 md:w-1/2 md:h-[300px] h-[270px] w-full lg:h-full">
               <img
                 className="h-full w-full opacity-100 object-cover"
-                src="src/assets/picture/banner-2.jpg"
+                src={banner2}
                 alt="Banner2"
               />
             </div>
@@ -82,7 +82,7 @@ export default function Body() {
             <div className="column3 lg:w-1/2 relative flex w-full md:h-[300px] h-[330px] lg:h-full">
               <img
                 className="h-full w-full"
-                src="src/assets/picture/banner-1.jpg"
+                src={banner1}
                 alt="Banner1"
               />
 
@@ -118,7 +118,7 @@ export default function Body() {
             <div className="column1 w-full lg:w-1/4 md:w-1/2 md:h-[300px] relative flex h-[400px] lg:h-full ">
               <img
                 className="h-full w-full brightness-50 opacity-40 "
-                src="src/assets/picture/mug1.jpg"
+                src={mug1}
                 alt="Mug1"
               />
               <div className="visit absolute w-[300px] h-[170px] py-[20px] px-[30px]  lg:h-[300px] lg:w-full lg:p-5 text-xl text-[#415161] lg::flex lg:flex-col lg:justify-between">
@@ -148,7 +148,7 @@ export default function Body() {
             <div className="column2 md:w-1/2 md:h-[300px] lg:w-1/4 w-full  lg:h-full h-[270px]">
               <img
                 className="w-full h-full lg:h-full lg:w-full lg:object-scale-down object-cover [object-position:top] "
-                src="src/assets/picture/about-img.jpg"
+                src={aboutImg}
                 alt="About-img"
               />
             </div>
@@ -156,7 +156,7 @@ export default function Body() {
             <div className="column3 md:w-1/2 md:h-[300px] lg:w-1/4 w-full lg:h-full h-[270px]">
               <img
                 className="w-full h-full lg:h-full lg:w-ful object-cover [object-position:center]"
-                src="src/assets/picture/mug2.jpg"
+                src={mug2}
                 alt="Mug2"
               />
             </div>
@@ -165,7 +165,7 @@ export default function Body() {
               <div className="plus-icon w-full h-full p-5 flex flex-col items-center justify-center">
                 <img
                   className="m-2 h-[50px] w-[50px] lg:h-[100px] lg:w-[100px] object-center"
-                  src="src/assets/picture/plus-icon-free-img-1.png"
+                  src={plusIcon}
                   alt="Plus-Icon"
                 />
                 <p className="Plus-icon-content uppercase font-bold text-gray-800 text-center">
@@ -182,7 +182,7 @@ export default function Body() {
           <div className="column img3-column w-full h-[270px] pt-[50px] lg:w-1/2 md:h-full lg:ml-20">
             <img
                className="h-full w-[400px] px-[7px] "
-               src="src/assets/picture/slider3.png"
+               src={slider3}
                alt="Slider3"
              />
            </div>
@@ -245,7 +245,6 @@ export default function Body() {
                     <div key={product.id} className="column product1-column w-full h-full px-2">
                       <div className="row img-product relative">
                         <img className="shirt__img cursor-pointer" src={product.image} alt={product.name} />
-
                         <div onClick={() => {
                           setSelectedProduct(product)
                           setIsOpen(true);}}  className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0">
@@ -289,7 +288,7 @@ export default function Body() {
         <div className="preview relative">
           <img
             className="preview__img z-0 h-[200px] md:h-[500px] w-full object-cover relative"
-            src="src/assets/picture/banner-2.jpg"
+            src={banner2}
             alt="image"
           />
           <div className="preview__overlay z-1 left-0 bottom-0 absolute w-full h-[200px] md:h-full">
@@ -342,7 +341,7 @@ export default function Body() {
         <div className="column img7-column md:w-6/12 lg:h-full md:h-[400px] h-[414.4px] w-full">
           <img
             className="h-full w-full"
-            src="src/assets/picture/mug3.jpg"
+            src={mug3}
             alt="Mug3"
           />
         </div>
@@ -352,7 +351,7 @@ export default function Body() {
         <div className="column img8-column w-full h-[250px] lg:w-6/12 lg:h-[550px] relative">
           <img
             className="h-full w-full object-cover"
-            src="src/assets/picture/about-header.jpg"
+            src={aboutHeader}
             alt="img8"
           />
           <div className="buy-products absolute inset-0 flex flex-col w-full h-[250px] lg:h-[550px] bg-gray-900 bg-opacity-50 text-white lg:p-[100px]">
@@ -384,7 +383,7 @@ export default function Body() {
         <div className="column mug8-column w-full h-[250px] lg:w-6/12 lg:h-[550px] relative">
           <img
             className="h-full w-full object-cover [object-position:top] lg:object-none"
-            src="src/assets/picture/mug4.jpg"
+            src={mug4}
             alt="mug4"
           />
           <div className="buy-mugs absolute inset-0 flex flex-col w-full h-[250px] lg:h-[550px] bg-white bg-opacity-50 text-[#415161]  lg:p-[100px]">
@@ -469,6 +468,7 @@ export default function Body() {
                 Free shipping on orders over $50!
               </div>
 
+              {/* Dùng map ở đây */}
               {["No-Risk Money Back Guarantee!", "No Hassle Refunds", "Secure Payments"].map((text, index) => (
                 <div key={index} className="modal-check flex justify-start items-center text-[#67727d] ">
                   <svg className="h-[15px] w[15px] pr-1" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 512 512">
