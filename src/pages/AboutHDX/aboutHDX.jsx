@@ -1,5 +1,6 @@
 import Navigation from "../../component/Navigation";
 import Footer from "../../component/Footer";
+import {aboutHeader, aboutImg, aboutSectionBg } from "../assets";
 const AboutHDX = () => {
     return (
         <div>
@@ -7,7 +8,7 @@ const AboutHDX = () => {
              <div className="body-abouthdx h-full font-barlow">
                 <div className="slider1-abouthdx relative flex w-full h-[1500px] md:h-[960px] lg:h-[900px]">
                     <div className="img-about w-full h-full">
-                        <img className="w-full h-full object-right-top object-cover lg:object-none" src="src/assets/picture/about-header.jpg" alt="slider1" />
+                        <img className="w-full h-full object-right-top object-cover lg:object-none" src={aboutHeader} alt="slider1" />
                     </div>
                      <div className="content-about absolute text-white h-full lg:h-[900px] md:h-[960px]   w-full p-5">
                         <div className="row border-b-2 h-[450px] lg:h-[600px]">
@@ -79,7 +80,7 @@ const AboutHDX = () => {
                     </div>
 
                     <div className="column-img w-full h-[466px] lg:h-full lg:w-2/5 md:w-1/2 md:h-[580px]">
-                        <img className="h-full w-full object-contain" src="src/assets/picture/about-img.jpg" alt="Slider2" />
+                        <img className="h-full w-full object-contain" src={aboutImg} alt="Slider2" />
                     </div>
                    </div>
                 </div>
@@ -101,7 +102,7 @@ const AboutHDX = () => {
 
                 <div className="slider4 relative flex">
                     <div className="img h-[400px] md:h-[330px] lg:h-[750px] w-full ">
-                        <img className="h-full w-full object-cover object-right-top md:object-right-bottom lg:object-none" src="src/assets/picture/about-section-bg.jpg" alt="Aboutt" />
+                        <img className="h-full w-full object-cover object-right-top md:object-right-bottom lg:object-none" src={aboutSectionBg}alt="Aboutt" />
                     </div>
 
                     <div className="content absolute h-[400px] md:h-[330px] lg:h-[750px] w-full lg:p-[190px] md:py-0 flex px-5 py-[60px] md:px-[50px]">
