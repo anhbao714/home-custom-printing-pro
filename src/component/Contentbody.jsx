@@ -245,6 +245,7 @@ export default function Body() {
                     <div key={product.id} className="column product1-column w-full h-full px-2">
                       <div className="row img-product relative">
                         <img className="shirt__img cursor-pointer" src={product.image} alt={product.name} />
+
                         <div onClick={() => {
                           setSelectedProduct(product)
                           setIsOpen(true);}}  className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0">
