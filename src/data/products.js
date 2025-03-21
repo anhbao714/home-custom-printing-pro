@@ -5,7 +5,7 @@ import {
   tshirt4,
   tshirt5,
   tshirt6,
-} from "../assets/picture"; 
+} from  "../assets/picture"; 
 export const products = [
     
         {
