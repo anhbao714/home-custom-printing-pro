@@ -79,7 +79,7 @@ export default function Body() {
                 alt="HDX"
               />
               <div className="texttt w-full md:h-full h-[200px] absolute z-1">
-                <p className="textttt md:h-full w-full h-[200px] text-slate-500 px-10 text-center py-[60px] text-lg flex items-center justify-center">
+                <p className="textttt md:h-full w-full h-[200px] text-slate-500 px-10 text-center py-[60px] text-lg flex items-center justify-center md:text-left">
                   {" "}
                   Best quality printed tshirts and mugs for all your needs
                 </p>
@@ -131,8 +131,8 @@ export default function Body() {
                 src={mug1}
                 alt="Mug1"
               />
-              <div className="visit absolute w-[300px] h-[170px] py-[20px] px-[30px]  lg:h-[300px] lg:w-full lg:p-5 text-xl text-[#415161] lg::flex lg:flex-col lg:justify-between">
-                <p className="line text-[20px] lg:text-[30px] capitalize leading-[1.3em] w-full font-semibold lg:font-black lg:flex lg:justify-center lg:items-center mb-[30px] mt-[30px] lg:mb-[80px] flex-grow">
+              <div className="visit absolute w-[300px] h-[170px] py-[20px] px-[30px] lg:h-[300px] lg:w-full lg:p-5 lg:pr-10 text-xl text-[#415161] lg::flex lg:flex-col lg:justify-between">
+                <p className="line text-[20px] lg:text-[30px] capitalize leading-[1.3em] w-full font-semibold lg:font-black lg:flex lg:justify-center lg:items-center mb-[30px] mt-[30px] lg:mt-[50px] lg:mb-[20px] flex-grow">
                   Get Printed Mug @ $15!
                 </p>
                 <div className="w-[280px] h-[30px] lg:w-full lg:h-[40px]">
