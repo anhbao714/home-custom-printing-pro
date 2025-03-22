@@ -333,12 +333,20 @@ export default function Body() {
                       ))}
                     </div>
                     <div className="price flex items-center justify-center mb-5 font-semibold">
-                      <div className="original-price line-through text-gray-400">
-                        {product.originalPrice}
-                      </div>
-                      <div className="sale-price text-zinc-700">
-                        {product.salePrice}
-                      </div>
+                      {product.sale ? (
+                        <>
+                          <div className="original-price line-through text-gray-400 mr-2">
+                            {product.originalPrice}
+                          </div>
+                          <div className="sale-price text-zinc-700">
+                            {product.salePrice}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="sale-price text-zinc-700">
+                          {product.originalPrice}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
