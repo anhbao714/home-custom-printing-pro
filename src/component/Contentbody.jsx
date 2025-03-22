@@ -106,7 +106,7 @@ export default function Body() {
                   <div className="w-2/3 md:w-3/5 h-[35px]">
                     <a
                       href=""
-                      className="visit-store1 w-full text-xs text-[#6d6767] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#757070]"
+                      className="visit-store1 w-full lg:w-[150px] text-xs  text-[#6d6767] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#757070]"
                     >
                       <svg
                         className="right-icon h-4 w-4 mr-3"
@@ -132,10 +132,10 @@ export default function Body() {
                 alt="Mug1"
               />
               <div className="visit absolute w-[300px] h-[170px] py-[20px] px-[30px] lg:h-[300px] lg:w-full lg:p-5 lg:pr-10 text-xl text-[#415161] lg::flex lg:flex-col lg:justify-between">
-                <p className="line text-[20px] lg:text-[30px] capitalize leading-[1.3em] w-full font-semibold lg:font-black lg:flex lg:justify-center lg:items-center mb-[30px] mt-[30px] lg:mt-[50px] lg:mb-[20px] flex-grow">
+                <p className="line text-[20px] lg:text-[30px] capitalize leading-[1.3em] w-full font-semibold lg:font-black lg:flex lg:justify-center lg:items-center mb-[30px] mt-[30px] lg:mt-[50px] flex-grow">
                   Get Printed Mug @ $15!
                 </p>
-                <div className="w-[280px] h-[30px] lg:w-full lg:h-[40px]">
+                <div className="w-[280px] h-[30px] lg:w-1/2 lg:h-[40px]">
                   <a
                     href=""
                     className="visit-store2 w-[130px] lg:w-full text-xs  text-[#415161] uppercase py-[10px] flex items-center justify-center border-[2px] border-[#415161]"
