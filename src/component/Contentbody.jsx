@@ -245,7 +245,7 @@ export default function Body() {
           </p>
         </div>
 
-        <div className="row list-gift text-base  w-full h-[60px] flex items-center font-bold text-zinc-600">
+        <div className="row list-gift text-base  w-full h-[60px] flex items-center font-bold pl-[24px] text-zinc-600">
           <div
             className={`Tshirts p-6 cursor-pointer ${
               categoryFilter === "Tshirts" ? "text-black" : ""
