@@ -110,7 +110,7 @@ const Allproducts = () => {
                   key={product.id}
                   className="column product1-column w-full h-full px-2"
                 >
-                  <div className="row img-product relative">
+                  <div className="row img-product relative group">
                     <img
                       className="shirt__img w-full h-full cursor-pointer"
                       src={product.image}
@@ -121,7 +121,7 @@ const Allproducts = () => {
                         setIsOpen(true);
                         setSelectedProduct(product);
                       }}
-                      className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0"
+                      className="overview z-10 w-full h-[30px] absolute bg-gray-700 opacity-0 group-hover:opacity-100 cursor-pointer flex items-center justify-center transition-opacity duration-300 bottom-0"
                     >
                       <button className="quickview text-white block text-center js-quick-view">
                         Quick view

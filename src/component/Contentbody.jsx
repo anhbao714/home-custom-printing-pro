@@ -285,7 +285,7 @@ export default function Body() {
                   key={product.id}
                   className="column product-column w-full h-full px-2"
                 >
-                  <div className="row img-product relative">
+                  <div className="row img-product relative group">
                     <img
                       className="shirt__img w-full h-full cursor-pointer"
                       src={product.image}
@@ -296,7 +296,7 @@ export default function Body() {
                         setSelectedProduct(product);
                         setIsOpen(true);
                       }}
-                      className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0"
+                      className="overview z-10 w-full h-[30px] absolute bg-gray-700 opacity-0 group-hover:opacity-100 cursor-pointer flex items-center justify-center transition-opacity duration-300 bottom-0"
                     >
                       <button className="quickview text-white block text-center">
                         Quick view
@@ -308,6 +308,7 @@ export default function Body() {
                       </div>
                     )}
                   </div>
+
                   <div className="row info-product text-center hover:shadow-lg transition-shadow duration-300">
                     <div className="name-product py-4 text-gray-600">
                       {product.category}
@@ -355,7 +356,7 @@ export default function Body() {
         </div>
       </div>
 
-      <div className="slider6 w-full h-[200px] md:h-[500px] md:px-5 md:mb-[200px]">
+      <div className="slider6 w-full h-[200px] md:h-[500px] md:px-5 lg:mb-[200px]">
         <div className="preview relative">
           <img
             className="preview__img z-0 h-[200px] md:h-[500px] w-full object-cover relative"
@@ -385,16 +386,16 @@ export default function Body() {
 
       <div className="slider7 lg:h-[650px] flex lg:mx-[40px] md:h-[400px] flex-col md:flex-row">
         <div className="column content7-column w-full md:w-1/2 md:h-[400px] h-[330px] px-10 pt-[60px] pb-[30px] flex flex-col items-center text-center lg:h-full lg:w-6/12 lg:p-[60px] lg:items-start lg:text-left">
-          <div className="content7-header text-[25px] font-semibold lg:text-[50px] lg:leading-[1.15] lg:font-bold text-slate-600 lg:mb-4">
+          <div className="content7-header text-[25px] md:text-left font-semibold lg:text-[50px] lg:leading-[1.15] lg:font-bold text-slate-600 lg:mb-4">
             Hundreds Of Ready Designs To Choose From
           </div>
-          <div className="content7-sub-header text-base h-[75px] text-slate-600 my-5 lg:mb-14">
+          <div className="content7-sub-header text-base h-[75px] text-slate-600 my-5 md:text-left lg:mb-14">
             Nam at congue diam etiam erat lectus, finibus eget commodo quis,
             congue diam etiam erat lectus.
           </div>
           <a
             href=""
-            className="action-content7 uppercase p-2.5 h-[50px] w-[200px] flex items-center justify-center space-x-2 text-gray-500 mx-auto lg:mx-0"
+            className="action-content7 uppercase p-2.5 h-[50px] w-[200px] flex items-center justify-center text-center space-x-2 text-gray-500  md:mr-auto lg:mx-0"
           >
             <svg
               className="right-icon h-4 w-4 mr-3"
@@ -408,7 +409,7 @@ export default function Body() {
           </a>
         </div>
 
-        <div className="column img7-column md:w-6/12 lg:h-full md:h-[400px] h-[414.4px] w-full">
+        <div className="column img7-column md:w-6/12 lg:h-full md:h-[400px] h-[414.4px] w-full p-10">
           <img className="h-full w-full" src={mug3} alt="Mug3" />
         </div>
       </div>

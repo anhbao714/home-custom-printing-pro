@@ -11,15 +11,12 @@ const Navigation = () => {
       {/* Cột Logo */}
       <div className="column logo-column w-[470px]">
         <div className="img-custom-logo w-[200px] p-5 ">
-          <img
-            src={siteLogo}
-            alt="Site Logo"
-          />
+          <img src={siteLogo} alt="Site Logo" />
         </div>
       </div>
 
       {/* Cột Header Selection */}
-      <div className="column menu-column hidden lg:!block">
+      <div className="column menu-column hidden ml-auto lg:!block">
         <div className="header-selection">
           <ul className="header-list flex text-center">
             <li className="w-full h-[100px] flex items-center justify-center whitespace-nowrap">
