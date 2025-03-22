@@ -384,7 +384,7 @@ export default function Body() {
       </div>
 
       <div className="slider7 lg:h-[650px] flex lg:mx-[40px] md:h-[400px] flex-col md:flex-row">
-        <div className="column content7-column w-full md:w-1/2 md:h-[400px] h-[300px] px-10 pt-[60px] flex flex-col items-center text-center lg:h-full lg:w-6/12 lg:p-[60px] lg:items-start lg:text-left">
+        <div className="column content7-column w-full md:w-1/2 md:h-[400px] h-[330px] px-10 pt-[60px] pb-[30px] flex flex-col items-center text-center lg:h-full lg:w-6/12 lg:p-[60px] lg:items-start lg:text-left">
           <div className="content7-header text-[25px] font-semibold lg:text-[50px] lg:leading-[1.15] lg:font-bold text-slate-600 lg:mb-4">
             Hundreds Of Ready Designs To Choose From
           </div>
