@@ -16,6 +16,7 @@ import {
 } from "../assets";
 
 export default function Body() {
+  const [categoryFilter, setCategoryFilter] = useState("Tshirts");
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -26,6 +27,7 @@ export default function Body() {
   const decreaseQuantity = () => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   };
+
   return (
     <div className="Container-content  ">
       <div className="slider1 w-full mt-5 md:mt-0">
@@ -244,75 +246,103 @@ export default function Body() {
         </div>
 
         <div className="row list-gift text-base  w-full h-[60px] flex items-center font-bold text-zinc-600">
-          <div className="Tshirts p-6">Tshirts</div>
-          <div className="Mugs hidden md:block p-6">Mugs</div>
+          <div
+            className={`Tshirts p-6 cursor-pointer ${
+              categoryFilter === "Tshirts" ? "text-black" : ""
+            }`}
+            onClick={() => setCategoryFilter("Tshirts")}
+          >
+            Tshirts
+          </div>
+          <div
+            className={`Mugs p-6 cursor-pointer ${
+              categoryFilter === "Mugs" ? "text-black" : ""
+            }`}
+            onClick={() => setCategoryFilter("Mugs")}
+          >
+            Mugs
+          </div>
         </div>
 
         <div className="row product w-full h-[2300px] md:h-[1135px] lg:h-[500px] flex p-5">
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4">
-            {products.slice(0, 4).map((product) => (
-              <div
-                key={product.id}
-                className="column product1-column w-full h-full px-2"
-              >
-                <div className="row img-product relative">
-                  <img
-                    className="shirt__img w-full h-full cursor-pointer"
-                    src={product.image}
-                    alt={product.name}
-                  />
-                  <div
-                    onClick={() => {
-                      setSelectedProduct(product);
-                      setIsOpen(true);
-                    }}
-                    className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0"
-                  >
-                    <button className="quickview text-white block text-center js-quick-view">
-                      Quick view
-                    </button>
-                  </div>
-                  {product.sale && (
-                    <div className="absolute top-[-10px] right-[-10px] w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
-                      <span className="text-sm font-bold">sale!</span>
+            {products
+              .filter((product) => {
+                if (categoryFilter === "Tshirts") {
+                  return product.category === "Tshirts";
+                } else if (categoryFilter === "Mugs") {
+                  return (
+                    product.category === "Mugs" &&
+                    [7, 8, 9, 11].includes(product.id)
+                  );
+                } else {
+                  return true;
+                }
+              })
+              .slice(0, 4)
+              .map((product) => (
+                <div
+                  key={product.id}
+                  className="column product1-column w-full h-full px-2"
+                >
+                  <div className="row img-product relative">
+                    <img
+                      className="shirt__img w-full h-full cursor-pointer"
+                      src={product.image}
+                      alt={product.name}
+                    />
+                    <div
+                      onClick={() => {
+                        setSelectedProduct(product);
+                        setIsOpen(true);
+                      }}
+                      className="overview z-1  w-full h-[30px] absolute bg-gray-700 cursor-pointer flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bottom-0"
+                    >
+                      <button className="quickview text-white block text-center">
+                        Quick view
+                      </button>
                     </div>
-                  )}
+                    {product.sale && (
+                      <div className="absolute top-[-10px] right-[-10px] w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
+                        <span className="text-sm font-bold">sale!</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="row info-product text-center hover:shadow-lg transition-shadow duration-300">
+                    <div className="name-product py-4 text-gray-600">
+                      {product.category}
+                    </div>
+                    <div className="color-product my-4 font-bold text-gray-800">
+                      {product.name}
+                    </div>
+                    <div className="review-rating flex items-center justify-center mb-4 space-x-1">
+                      {[...Array(5)].map((_, index) => (
+                        <svg
+                          key={index}
+                          className="icon-star h-5 w-5"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            stroke="#808080"
+                            strokeWidth="35"
+                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0z"
+                          />
+                        </svg>
+                      ))}
+                    </div>
+                    <div className="price flex items-center justify-center mb-5 font-semibold">
+                      <div className="original-price line-through text-gray-400">
+                        {product.originalPrice}
+                      </div>
+                      <div className="sale-price text-zinc-700">
+                        {product.salePrice}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="row info-product text-center hover:shadow-lg transition-shadow duration-300">
-                  <div className="name-product py-4 text-gray-600">
-                    {product.category}
-                  </div>
-                  <div className="color-product my-4 font-bold text-gray-800">
-                    {product.name}
-                  </div>
-                  <div className="review-rating flex items-center justify-center mb-4 space-x-1">
-                    {[...Array(5)].map((_, index) => (
-                      <svg
-                        key={index}
-                        className="icon-star h-5 w-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512"
-                      >
-                        <path
-                          fill="#FFFFFF"
-                          stroke="#808080"
-                          strokeWidth="35"
-                          d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0z"
-                        />
-                      </svg>
-                    ))}
-                  </div>
-                  <div className="price flex items-center justify-center mb-5 font-semibold">
-                    <div className="original-price line-through text-gray-400">
-                      {product.originalPrice}
-                    </div>
-                    <div className="sale-price text-zinc-700">
-                      {product.salePrice}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
@@ -450,9 +480,11 @@ export default function Body() {
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
                 />
-                <div className="absolute top-[10px] left-[10px] w-[40px] h-[40px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
-                  <span className="text-sm font-bold">sale!</span>
-                </div>
+                {selectedProduct.sale && (
+                  <div className="absolute top-[10px] left-[10px] w-[40px] h-[40px] bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg">
+                    <span className="text-sm font-bold">sale!</span>
+                  </div>
+                )}
               </div>
               <div className="column info-column w-full h-full md:w-1/2 md:overflow-y-auto lg:h-[500px] lg:overflow-visible md:max-h-[330px]">
                 <div className="row modal-content h-[full-80px] w-full p-[15px] pb-0 lg:px-[30px] lg:pt-[30px]">
@@ -501,7 +533,6 @@ export default function Body() {
                       Free shipping on orders over $50!
                     </div>
 
-                    {/* Dùng map ở đây */}
                     {[
                       "No-Risk Money Back Guarantee!",
                       "No Hassle Refunds",
