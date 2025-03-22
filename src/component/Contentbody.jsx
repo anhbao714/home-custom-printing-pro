@@ -127,7 +127,7 @@ export default function Body() {
           <div className="row card-container2 md:flex md:h-1/2 grid grid-cols-1 flex-wrap lg:grid-cols-4">
             <div className="column1 w-full lg:w-1/4 md:w-1/2 md:h-[300px] relative flex h-[400px] lg:h-full ">
               <img
-                className="h-full w-full brightness-50 opacity-40 "
+                className="h-full w-full brightness-50 opacity-40 object-cover"
                 src={mug1}
                 alt="Mug1"
               />
