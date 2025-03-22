@@ -265,7 +265,7 @@ export default function Body() {
         </div>
 
         <div className="row product w-full h-[2300px] md:h-[1135px] lg:h-[500px] flex p-5">
-          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4 w-full">
             {products
               .filter((product) => {
                 if (categoryFilter === "Tshirts") {
@@ -283,7 +283,7 @@ export default function Body() {
               .map((product) => (
                 <div
                   key={product.id}
-                  className="column product1-column w-full h-full px-2"
+                  className="column product-column w-full h-full px-2"
                 >
                   <div className="row img-product relative">
                     <img
